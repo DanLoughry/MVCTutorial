@@ -6,25 +6,26 @@ using System.Web.Mvc;
 
 namespace MVCTutorial.Controllers
 {
-	public class HomeController : Controller
-	{
-		public ActionResult Index()
-		{
+	public class HomeController : Controller	{
+		public ActionResult Index()		{
 			return View();
 		}
 
-		public ActionResult About()
-		{
+		public ActionResult About()		{
 			ViewBag.Message = "Your application description page.";
 
 			return View();
 		}
 
-		public ActionResult Contact()
-		{
+		public ActionResult Contact()		{
 			ViewBag.Message = "Your contact page.";
 
 			return View();
 		}
+		public ActionResult Max()	{
+			return View();
+
+		}
+
 	}
 }
